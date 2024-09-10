@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --orange-font-color : #ffa500;
+    --dark-gray-font-color : #5c5c5c;
+    --background-color : #ececec;
+    --normal-font-color : #000;
+    --item-box-color : #fff;
+    --camera-item-background-color : #e0e0e0;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard-Regular';
+}
+
+body {
+    overflow-x: hidden;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 1920px;
+    height: 1327px;
+/*     background-color: var(--background-color); */
+}
+
+.container .item-container {
+    width: 100%;
+    height: 659px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+
+.container .item-container .itembox {
+    width: 1619px;
+    height: 497px;
+    background-color: var(--background-color);
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.itembox div {
+    width: 382px;
+    height: 418px;
+    background-color: var(--item-box-color);
+}
+
+.itembox div .textbox {
+    width: 100%;
+    height: 202px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.itembox div div > h1 {
+    font-size: 15.73px;
+    font-weight: 700;
+    padding: 12px 0 0 0;
+}
+
+.itembox div div > h3 {
+    font-size: 16px;
+    padding-top: 26px;
+    color: #5c5c5c;
+}
+.itembox div img {
+    width: 100%;
+    height: 216px;
+    object-fit: cover;
+}
+
+.headtopic {
+    font-size: 11.2px;
+    color: var(--orange-font-color);
+}
+.itembox .topic {
+    font-size: 27px;
+    position: absolute;
+    top : 0;
+    left : 0;
+}
+
+.textbox .date1 {
+    font-size: 14.73px;
+    color: #5c5c5c;
+    text-align: end;
+    padding-top: 26px;
+}
+
+.itembox .item03 div h3 {
+    padding-top: 10px;
+}
+
+.itembox div div i {
+    font-size: 20px;
+    color: var(--orange-font-color);
+    position: absolute;
+    bottom: 20px;
+}
+
+/* camera section ======================================================== */
+
+
+.camera-container {
+    width: 100%;
+    height: 659px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+
+.camera-container .camera-box {
+    width: 1619px;
+    height: 659px;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+/*     position: relative; */
+    flex-wrap: wrap;
+    justify-content:flex-end;
+    align-items: flex-start;
+    position: relative;
+}
+
+.camera-container .camera-box .camera-item {
+    width: 383px;
+    height: 432px;
+    margin: 64px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+/*     background-color: var(--item-box-color); */
+}
+
+.camera-container .camera-box > h1 {
+    font-size: 27px;
+    padding-top: 64px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.camera-container .camera-box div img {
+    width: 383px;
+    height: 383px;
+    object-fit: cover;
+}
+
+.camera-container .camera-box .imgbox {
+    width: 383px;
+    height: 383px;
+    background-color: var(--camera-item-background-color);
+    position: relative;
+}
+
+.camera-container .camera-box .imgbox h3 {
+    position: absolute;
+    font-size: 13px;
+    color: var(--dark-gray-font-color);
+    top: 0;
+    left: 0;
+    padding: 16px 20px;
+}
+
+.camera-container .camera-box .imgbox p {
+    position: absolute;
+    font-size: 17px;
+    color: var(--dark-gray-font-color);
+    bottom: 0;
+    right: 0;
+    padding: 18px 42px;
+}
+
+.camera-container .camera-box .imgbox i {
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: var(--orange-font-color);
+    padding: 0 18px 19px 0 ;
+}
+.camera-container .camera-box .camera-textbox {
+    width: 100%;
+}
+
+.camera-container .camera-box .camera-textbox >h1 {
+    font-size: 17px;
+    margin: 5px;
+    color: var(--normal-font-color);
+}
+
+.camera-container .camera-box .camera-textbox >h2 {
+    font-size: 17px;
+    color: var(--normal-font-color);
+    margin: 5px;
+}
